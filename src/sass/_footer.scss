@@ -1,0 +1,95 @@
+.footer-container {
+  display: flex;
+  background-color: $color_light_pink;
+  width: 100%;
+  padding-bottom: 97px;
+}
+
+.footer-title {
+  font-family: $font_titan;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.footer-name {
+  font-family: $font_titan;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color_red;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-contact {
+  margin-left: auto;
+}
+.footer-icons {
+  display: flex;
+  width: 151px;
+  height: 34px;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+.footer-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background-color: $color_social_icons_pink;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $color_red;
+  }
+  &:hover .social-icon {
+    fill: white;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+.footer-tel {
+  color: $color_black;
+  font-family: $font_dm;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.footer-contact-tel {
+  color: $color_red;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font_dm;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.87;
+  letter-spacing: 0.02em;
+  height: 45px;
+  color: $color_brown;
+  background-color: $color_light_pink;
+  border-top: 1px solid #e1e1e1;
+}
