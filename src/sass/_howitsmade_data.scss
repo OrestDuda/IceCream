@@ -8,21 +8,28 @@
   }
 
   &__item {
+    display: block;
+    width: 330px;
+    margin-right: 30px;
   }
 
   &__title {
+    font-family: $font_titan;
     color: $color_red;
     font-weight: 400;
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.04em;
+    margin: 0;
   }
 
   &__info {
+    font-family: $font_dm;
     color: $color_black;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.02em;
+    margin: 0;
   }
 }
