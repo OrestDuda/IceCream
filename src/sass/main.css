@@ -1,0 +1,43 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+body .container {
+  margin: auto;
+  padding: 0px 20px 0px 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  body .container {
+    width: 480px;
+    padding: 0px 28px 0px 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body .container {
+    width: 768px;
+    padding: 0px 35px 0px 35px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body .container {
+    width: 1280px;
+    padding: 0px 115px 0px 115px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
