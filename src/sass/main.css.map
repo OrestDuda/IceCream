@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAU;CACvB;;AACD,AAAA,CAAC;AACD,CAAC,AAAA,QAAQ;AACT,CAAC,AAAA,OAAO,CAAC;EACP,UAAU,EAAE,OAAO;CACpB;;AACD,AAAA,IAAI,CAAC;EACH,WAAW,EDIH,SAAS,EAAE,UAAU;CCc9B;;AAnBD,AAEE,IAFE,CAEF,UAAU,CAAC;EACT,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,iBAAiB;EAC1B,KAAK,EAAE,IAAI;CAaZ;;AAZC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EANvC,AAEE,IAFE,CAEF,UAAU,CAAC;IAKP,KAAK,EAAE,KAAK;IACZ,OAAO,EAAE,iBAAiB;GAU7B;;;AARC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAVvC,AAEE,IAFE,CAEF,UAAU,CAAC;IASP,KAAK,EAAE,KAAK;IACZ,OAAO,EAAE,iBAAiB;GAM7B;;;AAJC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAdxC,AAEE,IAFE,CAEF,UAAU,CAAC;IAaP,KAAK,EAAE,MAAM;IACb,OAAO,EAAE,mBAAmB;GAE/B",
+    "sources": [
+        "main.scss",
+        "_variables.scss",
+        "_common.scss",
+        "_header.scss",
+        "_hero.scss",
+        "_products.scss",
+        "_howitsmade.scss",
+        "_howitsmade_data.scss",
+        "_slider.scss",
+        "_departments.scss",
+        "_footer.scss",
+        "_side_menu.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
