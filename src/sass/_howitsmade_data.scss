@@ -6,6 +6,16 @@
     margin: 0;
     padding: 0;
 
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 139px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-bottom: 140px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-bottom: 97px;
+    }
+
     @media screen and (min-width: 768px) {
       display: flex;
     }
@@ -72,5 +82,8 @@
       font-size: 12px;
       width: 230px;
     }
+  }
+
+  .gallery {
   }
 }
