@@ -2,55 +2,120 @@
   display: flex;
   background-color: $color_light_pink;
   width: 100%;
-  padding-bottom: 97px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 43px;
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 91px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 97px;
+  }
+}
+
+.footer-pink-letter {
+  @media screen and (max-width: 767px) {
+    width: 232px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 7px;
+    width: 340px;
+  }
 }
 
 .footer-title {
   font-family: $font_titan;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 1.13;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $color_secondary_pink;
   margin-top: 0;
   margin-bottom: 15px;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .footer-name {
   font-family: $font_titan;
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
-  line-height: 1.14;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $color_red;
   margin-top: 0;
   margin-bottom: 0;
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
 }
 .footer-contact {
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    text-align: right;
+  }
 }
 .footer-icons {
   display: flex;
-  width: 151px;
-  height: 34px;
   text-align: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
+
   margin-left: auto;
+  @media screen and (min-width: 480px) {
+    width: 152px;
+    height: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 151px;
+    height: 34px;
+    margin-bottom: 50px;
+  }
 }
 .footer-icons-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 34px;
-  height: 34px;
   background-color: $color_social_icons_pink;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    width: 32px;
+    height: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 34px;
+    height: 34px;
+  }
 
   &:hover {
     background-color: $color_red;
@@ -69,18 +134,31 @@
   font-family: $font_dm;
   font-weight: 500;
   font-style: normal;
-  font-size: 16px;
-  line-height: 1.14;
+
   letter-spacing: 0.02em;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.14;
+  }
 }
 
 .footer-contact-tel {
   color: $color_red;
+  text-decoration: none;
 }
 
 .footer-copyright {
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   font-family: $font_dm;
   font-style: normal;
@@ -92,4 +170,15 @@
   color: $color_brown;
   background-color: $color_light_pink;
   border-top: 1px solid #e1e1e1;
+  padding-left: 80px;
+  padding-right: 80px;
+  @media screen and (min-width: 480px) {
+    height: 89px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 73px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 45px;
+  }
 }
