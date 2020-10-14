@@ -26,6 +26,10 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 37px;
+    }
+    @media screen and (min-width: $desktop) {
+        justify-content: space-around;
     }
     @media screen and (min-width: $mobile_s) {
         padding-top: 6px;
