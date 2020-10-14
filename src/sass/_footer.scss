@@ -1,8 +1,11 @@
+footer {
+  background-color: $color_light_pink;
+}
 .footer-container {
   display: flex;
-  background-color: $color_light_pink;
+  // background-color: $color_light_pink;
   width: 100%;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     padding-bottom: 43px;
     display: block;
   }
@@ -31,18 +34,21 @@
   text-transform: uppercase;
   color: $color_secondary_pink;
   margin-top: 0;
-  margin-bottom: 15px;
-  @media screen and (min-width: 480px) {
+
+  @media screen and (max-width: 767px) {
     font-size: 18px;
     line-height: 1.17;
+    margin-bottom: 17px;
   }
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;
+    margin-bottom: 16px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
+    margin-bottom: 15px;
   }
 }
 
@@ -54,7 +60,7 @@
   color: $color_red;
   margin-top: 0;
   margin-bottom: 0;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -83,13 +89,15 @@
   margin-bottom: 46px;
 
   margin-left: auto;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 152px;
     height: 32px;
+    margin-top: 43px;
   }
   @media screen and (min-width: 768px) {
     width: 162px;
     height: 34px;
+    margin-top: 0px;
   }
   @media screen and (min-width: 1280px) {
     width: 151px;
@@ -104,7 +112,7 @@
   background-color: $color_social_icons_pink;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 32px;
     height: 32px;
   }
@@ -132,11 +140,11 @@
 .footer-tel {
   color: $color_black;
   font-family: $font_dm;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 
   letter-spacing: 0.02em;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 1.86;
   }
@@ -172,7 +180,7 @@
   border-top: 1px solid #e1e1e1;
   padding-left: 80px;
   padding-right: 80px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     height: 89px;
   }
   @media screen and (min-width: 768px) {
