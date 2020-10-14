@@ -120,6 +120,7 @@ margin-right: 35px;
     border-radius: 22px;
     border-color: transparent;
     outline: transparent;
+    transition: 250ms $cubic;
     @media screen and (max-width: 767px) {
         display: none;
     }
