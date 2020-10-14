@@ -2,6 +2,17 @@
   background-color: $color_light_pink;
 }
 
+.departments-main-header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .departments-container {
   margin-left: auto;
   margin-right: auto;
@@ -44,6 +55,14 @@
   border-radius: 4px;
   width: 80px;
   height: 16px;
+}
+
+.FOODTRUCK {
+  width: 130px;
+  height: 16px;
+  background: $color_green;
+  border-radius: 4px;
+  display: block;
 }
 
 .departments-miniheader {
@@ -116,4 +135,32 @@
   line-height: 1.5;
   color: $color_brown;
   text-decoration: none;
+}
+
+.departments-button-bright {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $color_white;
+  background-color: $color_red;
+  border-style: none;
+  cursor: pointer;
+  width: 161.45px;
+  height: 44px;
+  border-radius: 22px;
+  margin-right: auto;
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  transition: background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $color_secondary_pink;
+  }
 }
