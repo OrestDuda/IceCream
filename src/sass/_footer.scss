@@ -1,13 +1,16 @@
 footer {
   background-color: $color_light_pink;
   .container {
+    padding-top: 113px;
     padding-bottom: 43px;
     @media screen and (min-width: $tablet) {
       display: flex;
       padding-bottom: 91px;
+      padding-top: 160px;
     }
     @media screen and (min-width: $desktop) {
       padding-bottom: 97px;
+      padding-top: 165px;
     }
     .footer-title {
       width: 232px;
