@@ -116,7 +116,7 @@ header {
         }
         &:hover,
         &:focus {
-          background-color: #ecebeb;
+          background-color: $color_button-grey;
           cursor: pointer;
         }
         .buy-btn-text {

@@ -265,6 +265,7 @@ svg {
 .products-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -272,28 +273,13 @@ svg {
   border-color: transparent;
   margin-left: auto;
   margin-right: auto;
-  // transition: 250ms $cubic;
-  // &:hover,
-  // &:focus {
-  //   background-color: $color_red;
-  //   .product-icon-arrow {
-  //     fill: $color_white;
-  //   }
-  // }
-
-  @media screen and (max-width: $tablet - 1px) {
-    margin-bottom: 41px;
-  }
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+  transition: all 250ms $cubic;
+  &:hover {
+    background-color: $color_button_grey;
+    cursor: pointer;
   }
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
   }
-}
-
-.product-icon-arrow {
-  padding-top: 13px;
-  padding-bottom: 14px;
-  // fill: $color_red;
 }
