@@ -34,6 +34,7 @@
       line-height: 21px;
       text-align: center;
       text-transform: uppercase;
+      margin: 0px;
       margin-bottom: 15px;
 
       @media screen and (min-width: $tablet) {
@@ -59,6 +60,7 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 26px;
+    margin: 0px;
 
     @media screen and (min-width: $tablet) {
       font-size: 48px;
