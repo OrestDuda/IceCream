@@ -180,7 +180,7 @@ svg {
 }
 
 .products-subtitle {
-  margin-bottom: 0px;
+  margin: 0px;
   text-align: center;
 
   font-family: $font_titan;
@@ -204,18 +204,16 @@ svg {
   @media screen and (min-width: $desktop) {
     padding-top: 163px;
     font-size: 30px;
-    line-height: 34px;
+    line-height: 1.13;
   }
 }
 
 .products-subparagraph {
-  margin-top: 0px;
   text-align: center;
 
   font-family: $font_dm;
   font-style: normal;
   font-weight: bold;
-
   letter-spacing: 0.04em;
 
   color: $color_white;
@@ -223,7 +221,7 @@ svg {
     font-size: 14px;
     line-height: 1.52;
 
-    margin-top: 23px;
+    margin-top: 0px;
     margin-bottom: 30px;
     margin-right: 41px;
     margin-left: 41px;
@@ -232,7 +230,7 @@ svg {
     font-size: 14px;
     line-height: 1.76;
 
-    margin-top: 27px;
+    margin-top: 0px;
     margin-bottom: 40px;
     margin-right: 11px;
     margin-left: 11px;
@@ -240,7 +238,7 @@ svg {
   @media screen and (min-width: $desktop) {
     font-size: 16px;
     line-height: 1.76;
-
+    margin-top: 0px;
     margin-bottom: 62px;
     margin-right: 44px;
     margin-left: 44px;
@@ -256,10 +254,9 @@ svg {
   line-height: 1.07;
   letter-spacing: 0.03m;
   color: $color_white;
+  margin-bottom: 26px;
 
-  margin-bottom: 32px;
   @media screen and (max-width: $desktop - 1px) {
-    margin-bottom: 0px;
     font-size: 40px;
     line-height: 1.02;
   }
