@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
-  </head>
-  <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+<html lang="eng">
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
+  <title>IceCream</title>
+</head>
+
+<body>
+  <include src="./partials/header.html"></include>
+  <include src="./partials/hero.html"></include>
+  <include src="./partials/products.html"></include>
+  <include src="./partials/howitsmade.html"></include>
+  <include src="./partials/howitsmade_data.html"></include>
+  <include src="./partials/slider.html"></include>
+  <include src="./partials/departments.html"></include>
+  <include src="./partials/footer.html"></include>
+  <include src="./partials/side_menu.html"></include>
+  <script src="./modal.js"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>
