@@ -1925,4 +1925,8 @@ ul {
 .side-menu__links.active-link:hover, .side-menu__links.active-link:focus {
   color: #ffffff;
 }
+
+is-hidden {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
