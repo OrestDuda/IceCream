@@ -1,0 +1,171 @@
+.departments-section {
+  background-color: $color_light_pink;
+  position: relative;
+}
+
+.departments-main-header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.departments-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: -46px;
+}
+
+.departments-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.departments-listik {
+  width: 220px;
+  background: $color_white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.departments-thumb {
+  padding: 43px 20px 43px 21px;
+}
+
+.departments-header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.37;
+  color: $color_white;
+  text-align: center;
+}
+
+.cafe {
+  display: block;
+  background-color: $color_yellow;
+  border-radius: 4px;
+  width: 80px;
+  height: 16px;
+}
+
+.FOODTRUCK {
+  width: 130px;
+  height: 16px;
+  background: $color_green;
+  border-radius: 4px;
+  display: block;
+}
+
+.departments-miniheader {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.37;
+  letter-spacing: 0.04em;
+  color: $color_black;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.departments-description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color_brown;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.departments-workingtime {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  & ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.hours-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &:nth-child(2) {
+    padding-top: 10px;
+  }
+}
+
+.departments-week {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.37;
+  color: $color_black;
+  display: block;
+  margin: 0;
+}
+
+.departments-hours {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $color_secondary_pink;
+  display: block;
+}
+
+.departmnets-contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color_brown;
+  text-decoration: none;
+}
+
+.departments-button-bright {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $color_white;
+  background-color: $color_red;
+  border-style: none;
+  cursor: pointer;
+  width: 161.45px;
+  height: 44px;
+  border-radius: 22px;
+  margin-right: auto;
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  // background-image: url(../images/arrow.svg);
+  background-position: 80% 50%;
+  padding-bottom: 54px;
+  transition: background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $color_secondary_pink;
+  }
+}
