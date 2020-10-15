@@ -17,6 +17,10 @@
   list-style: none;
   margin: 0px;
   padding: 0px;
+  transition: all 250ms $cubic;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 img,
