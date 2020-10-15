@@ -1,11 +1,7 @@
 footer {
   background-color: $color_light_pink;
-
-  .footer-container {
-    width: 100%;
-    display: block;
+  .container {
     padding-bottom: 43px;
-
     @media screen and (min-width: $tablet) {
       display: flex;
       padding-bottom: 91px;
@@ -13,19 +9,15 @@ footer {
     @media screen and (min-width: $desktop) {
       padding-bottom: 97px;
     }
-
     .footer-title {
       width: 232px;
-
-      @media screen and (min-width: $tablet) and (max-width: $desktop -1px) {
+      @media screen and (min-width: $tablet) {
         width: 340px;
-        padding-top: 7px;
       }
       @media screen and (min-width: $desktop) {
         width: 478px;
       }
-
-      .footer-title3 {
+      .pre-title {
         font-family: $font_titan;
         font-style: normal;
         font-weight: 400;
@@ -35,7 +27,6 @@ footer {
         font-size: 18px;
         line-height: 1.17;
         margin-bottom: 17px;
-
         @media screen and (min-width: $tablet) {
           font-size: 26px;
           line-height: 1.15;
@@ -47,8 +38,7 @@ footer {
           margin-bottom: 15px;
         }
       }
-
-      .footer-title2 {
+      .title {
         font-family: $font_titan;
         font-style: normal;
         font-weight: 400;
@@ -71,11 +61,9 @@ footer {
         }
       }
     }
-
     .footer-contact {
       margin-left: auto;
       text-align: right;
-
       .footer-icons {
         display: flex;
         text-align: center;
@@ -85,7 +73,6 @@ footer {
         width: 152px;
         height: 32px;
         margin-top: 43px;
-
         @media screen and (min-width: $tablet) {
           width: 162px;
           height: 34px;
@@ -95,7 +82,6 @@ footer {
           width: 151px;
           margin-bottom: 50px;
         }
-
         .footer-icons-link {
           display: flex;
           justify-content: center;
@@ -105,19 +91,16 @@ footer {
           transition: background-color 250ms $cubic;
           width: 32px;
           height: 32px;
-
           @media screen and (min-width: $tablet) {
             width: 34px;
             height: 34px;
           }
-
           &:hover {
             background-color: $color_red;
-          }
-
-          &:hover .social-icon {
-            fill: $color_white;
-            transition: fill 250ms $cubic;
+            .social-icon {
+              fill: $color_white;
+              transition: fill 250ms $cubic;
+            }
           }
         }
         .social-icon {
@@ -133,16 +116,13 @@ footer {
         letter-spacing: 0.02em;
         font-size: 12px;
         line-height: 1.86;
-
         @media screen and (min-width: $tablet) {
           font-size: 14px;
         }
-
         @media screen and (min-width: $desktop) {
           font-size: 16px;
           line-height: 1.14;
         }
-
         .footer-contact-tel {
           color: $color_red;
           text-decoration: none;
@@ -150,9 +130,7 @@ footer {
       }
     }
   }
-
   .footer-copyright {
-    display: block;
     height: 89px;
     padding-top: 22px;
     text-align: center;
@@ -164,13 +142,10 @@ footer {
     letter-spacing: 0.02em;
     color: $color_brown;
     border-top: 1px solid #e1e1e1;
-    .div {
-      margin: 0px;
-    }
     & :first-child {
       margin-right: 5px;
     }
-    @media screen and (min-width: $mobile_s+1px) {
+    @media screen and (min-width: $mobile_l) {
       display: flex;
       align-items: center;
       justify-content: center;
