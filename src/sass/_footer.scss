@@ -1,0 +1,164 @@
+footer {
+  background-color: $color_light_pink;
+  .container {
+    padding-top: 113px;
+    padding-bottom: 43px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      padding-bottom: 91px;
+      padding-top: 160px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 97px;
+      padding-top: 165px;
+    }
+    .footer-title {
+      width: 232px;
+      @media screen and (min-width: $tablet) {
+        width: 340px;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 478px;
+      }
+      .pre-title {
+        font-family: $font_titan;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color_secondary_pink;
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 1.17;
+        margin-bottom: 17px;
+        @media screen and (min-width: $tablet) {
+          font-size: 26px;
+          line-height: 1.15;
+          margin-bottom: 16px;
+        }
+        @media screen and (min-width: $desktop) {
+          font-size: 30px;
+          line-height: 1.13;
+          margin-bottom: 15px;
+        }
+      }
+      .title {
+        font-family: $font_titan;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color_red;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+
+        @media screen and (min-width: $tablet) {
+          font-size: 48px;
+          letter-spacing: 0.06em;
+        }
+        @media screen and (min-width: $desktop) {
+          font-size: 58px;
+          line-height: 1.14;
+          letter-spacing: 0.06em;
+        }
+      }
+    }
+    .footer-contact {
+      margin-left: auto;
+      text-align: right;
+      .footer-icons {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        margin-bottom: 46px;
+        margin-left: auto;
+        width: 152px;
+        height: 32px;
+        margin-top: 43px;
+        @media screen and (min-width: $tablet) {
+          width: 162px;
+          height: 34px;
+          margin-top: 0px;
+        }
+        @media screen and (min-width: $desktop) {
+          width: 151px;
+          margin-bottom: 50px;
+        }
+        .footer-icons-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $color_social_icons_pink;
+          border-radius: 50%;
+          transition: background-color 250ms $cubic;
+          width: 32px;
+          height: 32px;
+          @media screen and (min-width: $tablet) {
+            width: 34px;
+            height: 34px;
+          }
+          &:hover {
+            background-color: $color_red;
+            .social-icon {
+              fill: $color_white;
+              transition: fill 250ms $cubic;
+            }
+          }
+        }
+        .social-icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .footer-tel {
+        color: $color_black;
+        font-family: $font_dm;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0.02em;
+        font-size: 12px;
+        line-height: 1.86;
+        @media screen and (min-width: $tablet) {
+          font-size: 14px;
+        }
+        @media screen and (min-width: $desktop) {
+          font-size: 16px;
+          line-height: 1.14;
+        }
+        .footer-contact-tel {
+          color: $color_red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    height: 89px;
+    padding-top: 22px;
+    text-align: center;
+    font-family: $font_dm;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.87;
+    letter-spacing: 0.02em;
+    color: $color_brown;
+    border-top: 1px solid #e1e1e1;
+    & :first-child {
+      margin-right: 5px;
+    }
+    @media screen and (min-width: $mobile_l) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px;
+    }
+    @media screen and (min-width: $tablet) {
+      height: 73px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 45px;
+    }
+  }
+}

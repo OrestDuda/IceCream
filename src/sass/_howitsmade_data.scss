@@ -1,0 +1,86 @@
+.howitsmade_data {
+  background-color: $color_light_pink;
+  .container {
+    padding-top: 39px;
+    @media screen and(min-width: $tablet) {
+      padding-top: 66px;
+    }
+    @media screen and(min-width: $desktop) {
+      padding-top: 39px;
+    }
+    .features-data {
+      .features-data-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 97px;
+        @media screen and (min-width: $tablet) {
+          display: flex;
+          padding-bottom: 140px;
+        }
+        li:not(:last-child) {
+          @media screen and (max-width: 767px) {
+            margin-bottom: 38px;
+          }
+          @media screen and (min-width: $tablet) {
+            margin-right: 60px;
+          }
+          @media screen and (min-width: $desktop) {
+            margin-right: 30px;
+          }
+        }
+        .features-data-title {
+          font-family: $font_titan;
+          color: $color_red;
+          font-weight: 400;
+          font-size: 58px;
+          line-height: 1.14;
+          letter-spacing: 0.04em;
+          margin: 0;
+          margin-top: 40px;
+          margin-bottom: 15px;
+          @media screen and (max-width: $tablet - 1px) {
+            font-size: 36px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+          }
+          @media screen and (max-width: $desktop - 1px) {
+            font-size: 48px;
+            margin-top: 36px;
+            margin-bottom: 16px;
+          }
+        }
+
+        .features-data-info {
+          color: $color_black;
+          font-weight: 700;
+          line-height: 1.75;
+          letter-spacing: 0.02em;
+          margin: 0;
+
+          @media screen and (max-width: 767px) {
+            font-size: 12px;
+            width: 230px;
+          }
+          @media screen and (min-width: $tablet) {
+            font-size: 14px;
+            width: 180px;
+          }
+          @media screen and (min-width: $desktop) {
+            font-size: 16px;
+            width: 330px;
+          }
+        }
+      }
+      .features-data-thumb {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# parcel-project-template
+npm# parcel-project-template
 
 ## Developing
 
