@@ -1,12 +1,12 @@
-.review {
-  padding-top: 80px;
+.section-slider {
+  padding-top: 86px;
   padding-bottom: 86px;
   @media screen and (min-width: $tablet) {
-    padding-top: 121px;
+    padding-top: 119px;
     padding-bottom: 119px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 123px;
+    padding-top: 132px;
     padding-bottom: 132px;
   }
 }
@@ -24,7 +24,7 @@
   }
 }
 
-.review-slide-imgage {
+.review-slide-image {
   width: 85px;
   height: 85px;
   margin-right: auto;
@@ -52,6 +52,7 @@
   padding-top: 45px;
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 20px;
   background-color: $color_light_grey;
   z-index: -2;
   position: relative;
@@ -134,14 +135,11 @@
 .review-slide-dots-wrap {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
   margin-bottom: 18px;
   @media screen and (min-width: $tablet) {
-    margin-top: 24px;
     margin-bottom: 14px;
   }
   @media screen and (min-width: $desktop) {
-    margin-top: 15px;
     margin-bottom: 15px;
   }
 }
@@ -168,6 +166,8 @@
     line-height: 37px;
     color: $color_black;
     margin-bottom: 30px;
+    margin-top: 0px;
+
     @media screen and (min-width: $tablet) {
       margin-bottom: 35px;
     }
@@ -205,14 +205,13 @@
   border-radius: 50%;
   border: transparent;
   cursor: pointer;
-  transition: background 250ms $cubic;
+  transition: all 250ms $cubic;
 
   &:not(:last-child) {
     margin-right: 18px;
   }
 
-  &.active,
-  &:hover {
+  &.active {
     background: url(../images/ice-cream.svg), transparent;
   }
 }

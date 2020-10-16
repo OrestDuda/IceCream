@@ -84,3 +84,198 @@
     }
   }
 }
+
+
+.gallery {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    $color_light_pink 0,
+    $color_light_pink 60px,
+    $color_white 60px,
+    $color_white
+  );
+  @media screen and(min-width: $mobile_l) {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      $color_light_pink 0,
+      $color_light_pink 80px,
+      $color_white 80px,
+      $color_white
+    );
+  }
+
+  @media screen and(min-width: $tablet) {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      $color_light_pink 0,
+      $color_light_pink 120px,
+      $color_white 120px,
+      $color_white
+    );
+  }
+  @media screen and(min-width: $desktop) {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      $color_light_pink 0,
+      $color_light_pink 170px,
+      $color_white 170px,
+      $color_white
+    );
+  }
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  img {
+    border-radius: 5px;
+    margin-bottom: 6px;
+    @media screen and (min-width: $mobile_l) {
+      border-radius: 15px;
+    }
+    &.smaller {
+      width: 50%;
+    }
+  }
+}
+.gallery-column {
+  &:not(:last-child) {
+    margin-right: 4px;
+    @media screen and(min-width: $desktop) {
+      margin-right: 6px;
+    }
+  }
+  &.col4 {
+    margin-top: 13px;
+  }
+  &.col5 {
+    margin-top: -34px;
+  }
+  &.col6 {
+    margin-top: 12px;
+  }
+}
+
+/* The Modal */
+.gallery-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-modal-content {
+  position: relative;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+
+  &:hover,
+  &:focus {
+    color: $color_red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.gallery-slide {
+  display: none;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  &:hover {
+    background-color: rgba(212, 20, 67, 0.8);
+  }
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 20px;
+  border-radius: 3px 0 0 3px;
+  @media screen and (min-width: $mobile_l) {
+    right: 28px;
+  }
+  @media screen and (min-width: $tablet) {
+    right: 35px;
+  }
+  @media screen and (min-width: $desktop) {
+    right: 115px;
+  }
+  &:hover {
+    background-color: rgba(212, 20, 67, 0.8);
+  }
+}
+
+.hover-shadow {
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  .gallery-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fefefe;
+    border: transparent;
+    cursor: pointer;
+    transition: background 250ms $cubic;
+    &:not(:last-child) {
+      margin-right: 20px;
+      @media screen and (max-width: $mobile_l - 1) {
+        margin-right: 15px;
+      }
+    }
+    &.active,
+    &:hover {
+      background: $color_red;
+    }
+    @media screen and (max-width: $mobile_l - 1) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

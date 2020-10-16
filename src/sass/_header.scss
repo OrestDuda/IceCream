@@ -1,36 +1,31 @@
 header {
-  background-color: $color_main_pink;
   .container-head {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     margin: auto;
-    padding: 0px 20px 0px 20px;
+    padding: 6px 20px 0px 20px;
     width: 100%;
     @media screen and (min-width: $mobile_l) {
       width: 480px;
-      padding: 0px 28px 0px 28px;
     }
     @media screen and (min-width: $tablet) {
       width: 768px;
-      padding: 0px 35px 0px 35px;
+      padding: 35;
+      padding-top: 36px;
     }
     @media screen and (min-width: $desktop) {
       width: 1280px;
-      padding: 0px 40px 0px 40px;
+      padding: 35px 115px 0px 45px;
     }
     .header-container {
       @media screen and(min-width: $tablet) {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 37px;
       }
       @media screen and (min-width: $desktop) {
-        justify-content: space-around;
-      }
-      @media screen and (min-width: $mobile_s) {
-        padding-top: 6px;
-      }
-      @media screen and (min-width: $tablet) {
-        padding-top: 37px;
+        justify-content: space-between;
       }
       .nav-container {
         display: flex;

@@ -1,31 +1,100 @@
 <!DOCTYPE html>
 <html lang="eng">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
-    />
-    <title>IceCream</title>
-  </head>
 
-  <body>
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/howitsmade.html"></include>
-    <include src="./partials/howitsmade_data.html"></include>
-    <include src="./partials/slider.html"></include>
-    <include src="./partials/departments.html"></include>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/side_menu.html"></include>
-    <script src="./index.js"></script>
-    <script src="./modal.js"></script>
-    <script src="./slider.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
+  <title>IceCream</title>
+</head>
+
+<body>
+  <include src="./partials/header.html"></include>
+  <include src="./partials/hero.html"></include>
+  <include src="./partials/products.html"></include>
+  <include src="./partials/howitsmade.html"></include>
+  <include src="./partials/howitsmade_data.html"></include>
+  <include src="./partials/slider.html"></include>
+  <include src="./partials/departments.html"></include>
+  <include src="./partials/footer.html"></include>
+  <include src="./partials/side_menu.html"></include>
+  <script src="./index.js"></script>
+  <script>
+    // Open the Modal
+    function openGallery() {
+      document.getElementById('gallery-modal').style.display = 'block';
+    }
+
+    // Close the Modal
+    function closeGallery() {
+      document.getElementById('gallery-modal').style.display = 'none';
+    }
+
+    var slideIndex = 1;
+    show_Slides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      show_Slides((slideIndex += n));
+    }
+    function gallerySlide(n) {
+      show_Slides((slideIndex = n));
+    }
+
+    function show_Slides(n) {
+      var i;
+      var slides = document.getElementsByClassName('gallery-slide');
+      var dots = document.getElementsByClassName('gallery-dot');
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+      }
+      slides[slideIndex - 1].style.display = 'block';
+      dots[slideIndex - 1].className += ' active';
+    }
+  </script>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName('review-slide');
+      var dots = document.getElementsByClassName('review-slider-controls-dot');
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+      }
+      slides[slideIndex - 1].style.display = 'block';
+      dots[slideIndex - 1].className += ' active';
+    }
+
+  </script>
+  <script src="./modal.js"></script>
+</body>
+
 </html>

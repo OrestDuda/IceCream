@@ -25,12 +25,76 @@
                 </li>
             </ul>
         </div>
-
-        <picture class="features-data-thumb">
-            <source srcset="./images/gallery.webp " type="image/webp" />
-            <img srcset="
-            ./images/gallery-1280.png 1x,
-            ./images/gallery-2560.png 2x" src="./images/gallery-1280.png" alt="gallery" />
-        </picture>
     </div>
 </section>
+<section class="gallery">
+    <div class="container">
+        <div class="gallery-row">
+            <div class="gallery-column col1">
+                <img src="./images/pic1.jpg" alt="" width="130" class="smallpic hover-shadow"
+                    onclick="openGallery();gallerySlide(1)" />
+            </div>
+            <div class="gallery-column col2">
+                <img src="./images/pic2.jpg" alt="" width="130" class="smallpic hover-shadow"
+                    onclick="openGallery();gallerySlide(2)" />
+                <img src="./images/pic3.jpg" alt="" width="130" class="smallpic hover-shadow"
+                    onclick="openGallery();gallerySlide(3)" />
+            </div>
+            <div class="gallery-column col3">
+                <img src="./images/pic4.jpg" alt="" width="260" class="bigpic hover-shadow"
+                    onclick="openGallery();gallerySlide(4)" />
+                <img src="./images/pic5.jpg" alt="" width="130" class="smallpic smaller hover-shadow"
+                    onclick="openGallery();gallerySlide(5)" />
+            </div>
+            <div class="gallery-column col4">
+                <img src="./images/pic6.jpg" alt="" width="130" class="smallpic hover-shadow"
+                    onclick="openGallery();gallerySlide(6)" />
+                <img src="./images/pic7.jpg" alt="" width="130" class="smallpic hover-shadow"
+                    onclick="openGallery();gallerySlide(7)" />
+            </div>
+            <div class="gallery-column col5">
+                <img src="./images/pic8.jpg" alt="" width="130" class="smallpic hover-shadow"
+                    onclick="openGallery();gallerySlide(8)" />
+                <img src="./images/pic9.jpg" alt="" width="130" class="smallpic hover-shadow"
+                    onclick="openGallery();gallerySlide(9)" />
+            </div>
+            <div class="gallery-column col6">
+                <img src="./images/pic10.jpg" alt="" width="130" class="smallpic hover-shadow"
+                    onclick="openGallery();gallerySlide(10)" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="gallery-modal" class="gallery-modal">
+    <span class="close cursor" onclick="closeGallery()">&times;</span>
+
+    <div class="gallery-modal-content container">
+        <img src="./images/pic1.jpg" class="gallery-slide" />
+        <img src="./images/pic2.jpg" class="gallery-slide" />
+        <img src="./images/pic3.jpg" class="gallery-slide" />
+        <img src="./images/pic4.jpg" class="gallery-slide" />
+        <img src="./images/pic5.jpg" class="gallery-slide" />
+        <img src="./images/pic6.jpg" class="gallery-slide" />
+        <img src="./images/pic7.jpg" class="gallery-slide" />
+        <img src="./images/pic8.jpg" class="gallery-slide" />
+        <img src="./images/pic9.jpg" class="gallery-slide" />
+        <img src="./images/pic10.jpg" class="gallery-slide" />
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="gallery-controls">
+        <span class="gallery-dot" onclick="gallerySlide(1)"></span>
+        <span class="gallery-dot" onclick="gallerySlide(2)"></span>
+        <span class="gallery-dot" onclick="gallerySlide(3)"></span>
+        <span class="gallery-dot" onclick="gallerySlide(4)"></span>
+        <span class="gallery-dot" onclick="gallerySlide(5)"></span>
+        <span class="gallery-dot" onclick="gallerySlide(6)"></span>
+        <span class="gallery-dot" onclick="gallerySlide(7)"></span>
+        <span class="gallery-dot" onclick="gallerySlide(8)"></span>
+        <span class="gallery-dot" onclick="gallerySlide(9)"></span>
+        <span class="gallery-dot" onclick="gallerySlide(10)"></span>
+    </div>
+</div>

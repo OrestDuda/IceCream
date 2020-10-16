@@ -1,0 +1,246 @@
+.hero {
+  background-color: $color_main_pink;
+  background-image: url(../images/hero-ellipse-pink-320.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 50% right 0%;
+  @media screen and (min-width: $mobile_l) {
+    background-image: url(../images/hero-ellipse-pink.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 30% right 50%;
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/hero-ellipse-pink.svg);
+    background-position: bottom 50% right 35%;
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/hero-ellipse-pink-538.svg);
+    background-position: bottom 60% right 40%;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 502px;
+    background-image: url(../images/hero-icecream-171.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0% right 10%;
+    @media screen and (min-width: $mobile_l) {
+      background-image: url(../images/hero-icecream-143.png);
+      background-repeat: no-repeat;
+      background-position: bottom 0% right 50%;
+    }
+    @media screen and (min-width: $tablet) {
+      background-image: url(../images/hero-icecream-143.png);
+      height: 399px;
+      background-position: bottom 0% right 45%;
+    }
+    @media screen and (min-width: $desktop) {
+      background-image: url(../images/hero-icecream-236.png);
+      height: 665px;
+      background-position: bottom 0% right 45%;
+    }
+
+    .left-side {
+      .hero-title {
+        padding-top: 193px;
+        @media screen and (min-width: $tablet) {
+          padding-top: 102px;
+        }
+        @media screen and (min-width: $desktop) {
+          padding-top: 171px;
+        }
+        h1 {
+          margin: 0px;
+          margin-bottom: 20px;
+          font-family: $font_titan;
+          font-size: 26px;
+          line-height: 30px;
+          letter-spacing: 0.04em;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: $color_white;
+          @media screen and (min-width: $tablet) {
+            font-size: 22px;
+            line-height: 26px;
+          }
+          @media screen and (min-width: $desktop) {
+            font-size: 38px;
+            line-height: 44px;
+            margin-bottom: 25px;
+          }
+        }
+        span {
+          font-family: $font_titan;
+          font-size: 48px;
+          line-height: 46px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: $color_red;
+          @media screen and (min-width: $tablet) {
+            font-size: 34px;
+            line-height: 31px;
+          }
+          @media screen and (min-width: $desktop) {
+            font-size: 58px;
+            line-height: 53px;
+          }
+        }
+        ul {
+          display: flex;
+          margin: 0px;
+          @media screen and (min-width: $tablet) {
+            margin-bottom: 19px;
+          }
+          li + li {
+            margin-left: 8px;
+            @media screen and (min-width: $desktop) {
+              margin-left: 15px;
+            }
+          }
+          .button-red {
+            background-color: $color_red;
+            color: $color_white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            font-size: 8px;
+            line-height: 10px;
+            height: 24px;
+            width: 63px;
+            @media screen and (min-width: $desktop) {
+              height: 40px;
+              width: 104px;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+          .button-white {
+            background-color: $color_white;
+            color: $color_red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            font-size: 8px;
+            line-height: 10px;
+            height: 24px;
+            width: 83px;
+            @media screen and (min-width: $desktop) {
+              height: 40px;
+              width: 138px;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+      .milk-text {
+        display: none;
+        width: 240px;
+        color: $color_white;
+        @media screen and (min-width: $tablet) {
+          display: flex;
+        }
+        @media screen and (min-width: $desktop) {
+          width: 418px;
+        }
+        img {
+          max-width: none;
+          width: 124px;
+          @media screen and (min-width: $desktop) {
+            width: 188px;
+            margin-right: 30px;
+          }
+        }
+        p {
+          margin: 0px;
+          margin-bottom: 7px;
+          padding-top: 47px;
+          font-size: 8px;
+          line-height: 12px;
+          @media screen and (min-width: $desktop) {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+        }
+        button {
+          width: 18px;
+          height: 18px;
+          background-color: $color_white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          border: none;
+          outline: none;
+          @media screen and (min-width: $desktop) {
+            width: 26px;
+            height: 26px;
+          }
+        }
+      }
+    }
+    .right-side {
+      display: none;
+      @media screen and (min-width: $tablet) {
+        display: block;
+        padding-top: 96px;
+      }
+      @media screen and (min-width: $desktop) {
+        padding-top: 160px;
+      }
+      .top-data {
+        ul {
+          margin: 0px;
+          margin-bottom: 72px;
+          @media screen and (min-width: $desktop) {
+            margin-bottom: 117px;
+          }
+          li:first-child {
+            margin-bottom: 14px;
+          }
+          li {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            font-family: $font_titan;
+            font-size: 28px;
+            line-height: 32px;
+            color: $color_red;
+            @media screen and (min-width: $desktop) {
+              font-size: 46px;
+              line-height: 53px;
+            }
+            span {
+              font-family: $font_dm;
+              font-size: 8px;
+              line-height: 10px;
+              color: $color_white;
+              font-style: normal;
+              font-weight: normal;
+              @media screen and (min-width: $desktop) {
+                font-size: 14px;
+                line-height: 18px;
+              }
+            }
+          }
+        }
+      }
+      .tasty-image {
+        img {
+          width: 168px;
+          height: auto;
+          @media screen and (min-width: $desktop) {
+            width: 293px;
+          }
+        }
+      }
+    }
+  }
+}
