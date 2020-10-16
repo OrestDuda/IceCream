@@ -29,14 +29,20 @@
       background-position: bottom 0% right 50%;
     }
     @media screen and (min-width: $tablet) {
-      background-image: url(../images/hero-icecream-143.png);
+      background-image: url(../images/hero-icecream-143.png),
+        url(../images/hero-ellipse-white.svg),
+        url(../images/hero-ellipse-white.svg);
       height: 399px;
-      background-position: bottom 0% right 45%;
+      background-position: bottom 0% right 45%, top 100px right 30px,
+        top 155px right 30px;
     }
     @media screen and (min-width: $desktop) {
-      background-image: url(../images/hero-icecream-236.png);
+      background-image: url(../images/hero-icecream-236.png),
+        url(../images/hero-ellipse-white-30.svg),
+        url(../images/hero-ellipse-white-30.svg);
       height: 665px;
-      background-position: bottom 0% right 45%;
+      background-position: bottom 0% right 45%, top 165px right 100px,
+        top 245px right 100px;
     }
 
     .left-side {
