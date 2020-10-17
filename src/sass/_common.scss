@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -25,4 +26,7 @@ body {
       padding: 0px 115px 0px 115px;
     }
   }
+}
+ul {
+  list-style: none;
 }

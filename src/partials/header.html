@@ -1,6 +1,6 @@
 <header>
     <div class="container-head">
-        <div class="header-container">
+        <div class="header-container" id="home">
             <div class="nav-container">
                 <a class="logo" href="">
                     <svg class="logo-icon" width="50" height="50">
@@ -10,16 +10,15 @@
                 </a>
                 <nav class="menu-container">
                     <ul class="menu-list">
-                        <li class="menu-list-item"><a href="">Home</a></li>
-                        <li class="menu-list-item"><a href="">About us</a></li>
-                        <li class="menu-list-item"><a href="">How it’s made?</a></li>
-                        <li class="menu-list-item"><a href="">Our products</a></li>
-                        <li class="menu-list-item"><a href="">Contact</a></li>
+                        <li class="menu-list-item"><a href="#home">Home</a></li>
+                        <li class="menu-list-item"><a href="#about">About us</a></li>
+                        <li class="menu-list-item"><a href="#howitsmade">How it’s made?</a></li>
+                        <li class="menu-list-item"><a href="#products">Our products</a></li>
+                        <li class="menu-list-item"><a href="#contacts">Contact</a></li>
                     </ul>
                 </nav>
-
                 <button class="menu-button" type="button" aria-label="переключатель мобильного меню" data-modal-open>
-                    <svg width="24" height="16">
+                    <svg width="20" height="20">
                         <use class="menu-button-icon" href="./images/sprite.svg#burger"></use>
                     </svg>
                 </button>

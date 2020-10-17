@@ -85,14 +85,18 @@ header {
         padding: 0px;
         background-color: transparent;
         border: none;
-        outline: transparent;
+        outline: none;
         @media screen and (min-width: $desktop) {
           display: none;
         }
         .menu-button-icon {
           position: absolute;
-          width: 20px;
-          height: 12px;
+          fill: #d41443;
+          transition: all 250ms $cubic;
+          &:hover,
+          &:focus {
+            fill: $color_white;
+          }
         }
       }
       .buy-btn {
