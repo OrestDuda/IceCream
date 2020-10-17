@@ -179,7 +179,6 @@ header .container-head .header-container .buy-btn a {
   justify-content: space-between;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  line-height: 21px;
   font-weight: bold;
   color: #d41443;
 }
@@ -2300,7 +2299,6 @@ footer .footer-copyright :first-child {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 21px;
     display: flex;
     justify-content: space-between;
     align-items: center;
