@@ -48,6 +48,12 @@
         margin-bottom: 86px;
       }
       .departments-listik {
+        transition: all 250ms $cubic;
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
         &:not(:last-child) {
           margin-bottom: 20px;
         }
@@ -292,13 +298,26 @@
         }
         .departments-button-red {
           background-color: $color_red;
+          transition: all 250ms $cubic;
           a {
             color: $color_white;
             padding-right: 17px;
             padding-left: 17px;
+            svg {
+              fill: $color_white;
+            }
             @media screen and(min-width: $tablet) {
-              padding-right: 35px;
-              padding-left: 35px;
+              padding-right: 30px;
+              padding-left: 30px;
+            }
+          }
+          &:hover {
+            background-color: $color_white;
+            a {
+              color: $color_red;
+            }
+            svg {
+              fill: $color_red;
             }
           }
         }
@@ -309,13 +328,22 @@
             padding-right: 31px;
             padding-left: 31px;
             color: $color_red;
+            svg {
+              fill: $color_red;
+            }
             @media screen and(min-width: $tablet) {
               padding-right: 40px;
               padding-left: 40px;
             }
           }
           &:hover {
-            background-color: $color_button-grey;
+            background-color: $color_red;
+            a {
+              color: $color_white;
+            }
+            svg {
+              fill: $color_white;
+            }
           }
         }
       }

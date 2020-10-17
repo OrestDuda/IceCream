@@ -85,7 +85,6 @@
   }
 }
 
-
 .gallery {
   background-image: repeating-linear-gradient(
     to bottom,
@@ -136,7 +135,7 @@
       border-radius: 15px;
     }
     &.smaller {
-      width: 50%;
+      max-width: calc((100% - 1 * 0px) / 2);
     }
   }
 }
@@ -195,6 +194,8 @@
 
 .gallery-slide {
   display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prev {
@@ -262,7 +263,7 @@
     background: #fefefe;
     border: transparent;
     cursor: pointer;
-    transition: background 250ms $cubic;
+    transition: all 250ms $cubic;
     &:not(:last-child) {
       margin-right: 20px;
       @media screen and (max-width: $mobile_l - 1) {

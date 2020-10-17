@@ -12,4 +12,6 @@
 <symbol id="burger" viewBox="0 0 46 32"><path fill="none" stroke="var(--color2, #d41443)" stroke-width="2.286" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"/></symbol>
 <symbol id="cross" viewBox="0 0 32 32"><path fill="none" stroke="var(--color3, #fff)" stroke-width="2" d="M2.519 2l26.963 28M2 29.481L30 2.518"/></symbol>
 <symbol id="arrow-small-red" viewBox="0 0 26 32"><path fill="none" stroke="var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2L19.341 16 5.172 28.8"/></symbol>
-<symbol id="arrow-small-white" viewBox="0 0 26 32"><path fill="none" stroke="var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2L19.341 16 5.172 28.8"/></symbol></defs></svg>
+<symbol id="arrow-small-white" viewBox="0 0 26 32"><path fill="none" stroke="var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2L19.341 16 5.172 28.8"/></symbol>
+<symbol id="arrow-bold" viewBox="0 0 32 32"><path d="M31 16L16 1v9H0v12h16v9z"/></symbol>
+<symbol id="arrow-light" viewBox="0 0 32 32"><path d="M19.414 27.414l10-10a2 2 0 000-2.828l-10-10a2 2 0 10-2.828 2.828L23.172 14H4a2 2 0 100 4h19.172l-6.586 6.586c-.39.39-.586.902-.586 1.414s.195 1.024.586 1.414a2 2 0 002.828 0z"/></symbol></defs></svg>

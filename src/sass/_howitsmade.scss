@@ -189,6 +189,10 @@
         font-weight: bold;
         align-items: center;
         transition: all 250ms $cubic;
+        svg {
+          fill: $color_red;
+          transition: all 250ms $cubic;
+        }
         @media screen and (min-width: $tablet) {
           font-size: 16px;
           font-weight: 21px;
@@ -197,7 +201,11 @@
         &:focus {
           outline: none;
           cursor: pointer;
-          background-color: $color_button_grey;
+          background-color: $color_red;
+          color: white;
+          svg {
+            fill: $color-white;
+          }
         }
       }
     }

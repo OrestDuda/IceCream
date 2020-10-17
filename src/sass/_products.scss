@@ -19,14 +19,8 @@
   transition: all 250ms $cubic;
   &:hover {
     transform: scale(1.05);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-}
-
-img,
-svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .products-paragraf {
@@ -261,7 +255,12 @@ svg {
     line-height: 1.02;
   }
 }
-
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .products-button {
   display: flex;
   justify-content: center;
@@ -270,14 +269,20 @@ svg {
   width: 44px;
   height: 44px;
   background-color: $color_white;
-  border-color: transparent;
+  border: none;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
   transition: all 250ms $cubic;
+  svg {
+    fill: $color_red;
+  }
   &:hover {
-    background-color: $color_button_grey;
+    background-color: $color_red;
     cursor: pointer;
+    svg {
+      fill: $color_white;
+    }
   }
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;

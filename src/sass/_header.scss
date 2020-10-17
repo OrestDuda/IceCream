@@ -96,23 +96,39 @@ header {
         }
       }
       .buy-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 160px;
         height: 44px;
         background-color: $color_white;
         border-radius: 22px;
-        border-color: transparent;
-        outline: transparent;
+        border: none;
+        outline: none;
         transition: all 250ms $cubic;
         @media screen and (max-width: 767px) {
           display: none;
         }
+        a {
+          width: 100%;
+          height: 100%;
+          padding-left: 30px;
+          padding-right: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-family: $font_dm;
+          font-size: 16px;
+          line-height: 21px;
+          font-weight: bold;
+          color: $color_red;
+        }
         &:hover,
         &:focus {
-          background-color: $color_button-grey;
-          cursor: pointer;
+          background-color: $color_red;
+          a {
+            color: $color_white;
+            svg {
+              fill: $color_white;
+            }
+          }
         }
         .buy-btn-text {
           display: block;
@@ -123,7 +139,7 @@ header {
           color: $color_red;
         }
         .buy-btn-icon {
-          margin-top: 2px;
+          fill: $color_red;
         }
       }
     }
