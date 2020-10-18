@@ -280,6 +280,7 @@ svg {
   &:hover {
     background-color: $color_red;
     cursor: pointer;
+
     svg {
       fill: $color_white;
     }

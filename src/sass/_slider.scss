@@ -47,6 +47,19 @@
   }
 }
 
+.review-slide {
+  animation-name: animate-review;
+  animation-duration: 500ms;
+}
+@keyframes animate-review {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 .review-slide-text-wrap {
   padding-bottom: 30px;
   padding-top: 45px;
