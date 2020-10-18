@@ -9,12 +9,15 @@
     background-position: bottom 30% right 50%;
   }
   @media screen and (min-width: $tablet) {
-    background-image: url(../images/hero-ellipse-pink.svg);
     background-position: bottom 50% right 35%;
   }
   @media screen and (min-width: $desktop) {
     background-image: url(../images/hero-ellipse-pink-538.svg);
     background-position: bottom 60% right 40%;
+  }
+  @media screen and (min-width: 1800px) {
+    background-image: url(../images/hero-ellipse-pink-538.svg);
+    background-position: bottom 60% right 45%;
   }
   .container {
     display: flex;
@@ -25,7 +28,6 @@
     background-position: bottom 0% right 10%;
     @media screen and (min-width: $mobile_l) {
       background-image: url(../images/hero-icecream-143.png);
-      background-repeat: no-repeat;
       background-position: bottom 0% right 50%;
     }
     @media screen and (min-width: $tablet) {

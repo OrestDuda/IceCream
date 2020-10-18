@@ -7,11 +7,11 @@
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.7);
   overflow-y: scroll;
-  transition: all 500ms $cubic;
+  transition: all 250ms $cubic;
 }
 .side-menu {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   right: 0px;
   top: 0px;
   display: block;
@@ -27,18 +27,21 @@
 
 @media screen and (min-width: $mobile_s) {
   .side-menu__button-close {
-    margin-right: 18px;
+    margin-right: 16px;
     margin-bottom: 23px;
     background-color: transparent;
     border: none;
     width: 28px;
     height: 28px;
-    svg {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    & {
       fill: $color_white;
       transition: all 250ms $cubic;
       &:hover,
       &:focus {
-        fill: #d41443;
+        color: #d41443;
       }
     }
   }
