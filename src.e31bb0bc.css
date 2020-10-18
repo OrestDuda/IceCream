@@ -218,7 +218,6 @@ header .container-head .header-container .buy-btn .buy-btn-icon {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(/hero-ellipse-pink.0af9f106.svg);
     background-position: bottom 50% right 35%;
   }
 }
@@ -226,6 +225,12 @@ header .container-head .header-container .buy-btn .buy-btn-icon {
   .hero {
     background-image: url(/hero-ellipse-pink-538.9a2d416d.svg);
     background-position: bottom 60% right 40%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .hero {
+    background-image: url(/hero-ellipse-pink-538.9a2d416d.svg);
+    background-position: bottom 60% right 45%;
   }
 }
 .hero .container {
@@ -239,7 +244,6 @@ header .container-head .header-container .buy-btn .buy-btn-icon {
 @media screen and (min-width: 480px) {
   .hero .container {
     background-image: url(/hero-icecream-143.fd35f49a.png);
-    background-repeat: no-repeat;
     background-position: bottom 0% right 50%;
   }
 }
@@ -1610,20 +1614,6 @@ svg {
   }
 }
 
-.review-slide {
-  display: none;
-  animation-name: animate-review;
-  animation-duration: 1.5s;
-}
-
-@keyframes animate-review {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .review-slider-controls {
   display: flex;
   justify-content: center;
@@ -2246,12 +2236,12 @@ footer .footer-copyright :first-child {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.7);
   overflow-y: scroll;
-  transition: all 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .side-menu {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   right: 0px;
   top: 0px;
   display: block;
@@ -2269,19 +2259,22 @@ footer .footer-copyright :first-child {
 
 @media screen and (min-width: 320px) {
   .side-menu__button-close {
-    margin-right: 18px;
+    margin-right: 16px;
     margin-bottom: 23px;
     background-color: transparent;
     border: none;
     width: 28px;
     height: 28px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
   }
-  .side-menu__button-close svg {
+  .side-menu__button-close {
     fill: #ffffff;
     transition: all 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
-  .side-menu__button-close svg:hover, .side-menu__button-close svg:focus {
-    fill: #d41443;
+  .side-menu__button-close:hover, .side-menu__button-close:focus {
+    color: #d41443;
   }
 
   .side-menu__button-buy {
